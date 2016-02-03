@@ -20,7 +20,7 @@
 # limitations under the License.
 #
 
-default['ruby_install']['version'] = '0.5.0'
+default['ruby_install']['version'] = '0.6.0'
 # what command at what target file do we target when updating the checksum
 # i'd have include this in pull request if it was obvious.
 # this is a good line to provide that hint.
