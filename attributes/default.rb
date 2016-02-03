@@ -21,6 +21,9 @@
 #
 
 default['ruby_install']['version'] = '0.5.0'
+# what command at what target file do we target when updating the checksum
+# i'd have include this in pull request if it was obvious.
+# this is a good line to provide that hint.
 default['ruby_install']['checksum'] = 'aa4448c2c356510cc7c2505961961a17bd3f3435842831e04c8516eb703afd19'
 
 # Install rubies into /opt/rubies as expected by Chruby.
