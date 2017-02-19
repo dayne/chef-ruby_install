@@ -20,11 +20,8 @@
 # limitations under the License.
 #
 
-default['ruby_install']['version'] = '0.6.0'
-# what command at what target file do we target when updating the checksum
-# i'd have include this in pull request if it was obvious.
-# this is a good line to provide that hint.
-default['ruby_install']['checksum'] = 'aa4448c2c356510cc7c2505961961a17bd3f3435842831e04c8516eb703afd19'
+default['ruby_install']['version'] = '0.6.1'
+default['ruby_install']['checksum'] = 'b3adf199f8cd8f8d4a6176ab605db9ddd8521df8dbb2212f58f7b8273ed85e73'
 
 # Install rubies into /opt/rubies as expected by Chruby.
 default['ruby_install']['default_ruby_base_path'] = '/opt/rubies'
