@@ -13,6 +13,6 @@ require_relative 'spec_helper'
 describe 'Rubies installed via partial version have correctly named dirs' do
   describe command('ls /opt/rubies') do
     its(:exit_status) { should eq 0 }
-    its(:stdout) { should match /ruby-1\.9\.3-p\d{3}/ }
+    its(:stdout) { should match /ruby-2\.3\.3/ }
   end
 end
