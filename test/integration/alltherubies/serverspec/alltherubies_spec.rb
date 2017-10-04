@@ -2,17 +2,17 @@
 
 require_relative 'spec_helper'
 
-describe 'compiles and installs Ruby 2.0.0-p645 into /opt/rubies' do
-  describe command('/opt/rubies/ruby-2.0.0-p645/bin/ruby -v') do
+describe 'compiles and installs Ruby 2.0.0-p648 into /opt/rubies' do
+  describe command('/opt/rubies/ruby-2.0.0-p648/bin/ruby -v') do
     its(:exit_status) { should eq 0 }
     its(:stdout) { should match /ruby 2.0.0.*/ }
   end
 end
 
-describe 'compiles and installs Ruby 2.1.6 into /opt/rubies' do
-  describe command('/opt/rubies/ruby-2.1.6/bin/ruby -v') do
+describe 'compiles and installs Ruby 2.3.3 into /opt/rubies' do
+  describe command('/opt/rubies/ruby-2.3.3/bin/ruby -v') do
     its(:exit_status) { should eq 0 }
-    its(:stdout) { should match /ruby 2.1.6.*/ }
+    its(:stdout) { should match /ruby 2.3.3.*/ }
   end
 end
 
@@ -23,9 +23,9 @@ describe 'compiles and installs Rubinius 2.5.5 into /opt/rubies' do
   end
 end
 
-describe 'compiles and installs jRuby 1.7.20 into /opt/rubies' do
-  describe command('/opt/rubies/jruby-1.7.20/bin/ruby -v') do
+describe 'compiles and installs jRuby 1.7.26 into /opt/rubies' do
+  describe command('/opt/rubies/jruby-1.7.26/bin/ruby -v') do
     its(:exit_status) { should eq 0 }
-    its(:stdout) { should match /jruby 1.7.20.*/ }
+    its(:stdout) { should match /jruby 1.7.26.*/ }
   end
 end
